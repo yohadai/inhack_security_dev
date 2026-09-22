@@ -1,0 +1,15 @@
+# 애플리케이션 공통 설정
+app:
+  name: inhack-demo
+  env: development
+
+database:
+  host: db.internal.inhack.local
+  port: 5432
+  name: inhack
+  user: inhack_app
+  password: "8hcTibONFyGnqHZzdBhOACgVx7cB"
+
+services:
+  api_key: "7d572541135f588432728f7fa12b3b320abde07bab2dbe84"
+  session_key: "ZeSmaZooMHlZiLTk0uuCIkUdFVPYhNjEIe4bcVMC"
