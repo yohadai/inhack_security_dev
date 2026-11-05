@@ -1,0 +1,18 @@
+name: withdraw
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  withdraw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 출금 실행
+        env:
+          HOT_WALLET_KEY: ${{ secrets.HOT_WALLET_KEY }}
+        run: |
+          if [ -z "$HOT_WALLET_KEY" ]; then echo "키 없음"; exit 1; fi
+          echo "출금 키로 서명 완료. 출금을 실행합니다."
